@@ -1,6 +1,7 @@
 spring:
   r2dbc:
-    url: r2dbc:tc:sqlserver:///?TC_IMAGE_TAG=latest
+#    url: r2dbc:tc:sqlserver:///?TC_IMAGE_TAG=latest
+    url: r2dbc:tc:custom-sqlserver:///?TC_IMAGE_TAG=latest
     name: ~
     username: my_user
     password: My_Password
