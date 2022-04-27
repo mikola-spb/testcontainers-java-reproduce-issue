@@ -1,0 +1,10 @@
+spring:
+  r2dbc:
+    url: r2dbc:tc:sqlserver:///?TC_IMAGE_TAG=latest
+    name: ~
+    username: my_user
+    password: My_Password
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG

@@ -1,12 +1,13 @@
 package testcontainers.java.reproduce.issue
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan
+import org.springframework.boot.runApplication
 
-fun main() {
-    println(App().greeting)
+@SpringBootApplication
+@ConfigurationPropertiesScan
+open class App
+
+fun main(args: Array<String>) {
+    runApplication<App>(*args)
 }
